@@ -1,0 +1,409 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.34
+4 warn package.json inknetwork@1.0.0 No repository field.
+5 warn package.json inknetwork@1.0.0 No README data
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ '/Users/rahulraghavan/Desktop/inknetwork',
+7 verbose install   [ 'backbone',
+7 verbose install     'body-parser',
+7 verbose install     'express',
+7 verbose install     'express3-handlebars',
+7 verbose install     'handlebars',
+7 verbose install     'jquery',
+7 verbose install     'underscore',
+7 verbose install     'ejs',
+7 verbose install     'passport',
+7 verbose install     'passport-google-oauth' ] ]
+8 info preinstall inknetwork@1.0.0
+9 warn package.json path@0.11.14 path is also the name of a node core module.
+10 verbose readDependencies using package.json deps
+11 verbose already installed skipping backbone@^1.2.3 /Users/rahulraghavan/Desktop/inknetwork
+12 verbose already installed skipping body-parser@^1.13.3 /Users/rahulraghavan/Desktop/inknetwork
+13 verbose already installed skipping express@^4.13.3 /Users/rahulraghavan/Desktop/inknetwork
+14 verbose already installed skipping express3-handlebars@^0.5.2 /Users/rahulraghavan/Desktop/inknetwork
+15 verbose already installed skipping handlebars@^4.0.2 /Users/rahulraghavan/Desktop/inknetwork
+16 verbose already installed skipping jquery@^2.1.4 /Users/rahulraghavan/Desktop/inknetwork
+17 verbose already installed skipping underscore@^1.8.3 /Users/rahulraghavan/Desktop/inknetwork
+18 verbose cache add [ 'ejs@>= 0.0.0', null ]
+19 verbose cache add name=undefined spec="ejs@>= 0.0.0" args=["ejs@>= 0.0.0",null]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: 'ejs@%3E=%200.0.0',
+20 verbose parsed url   path: 'ejs@%3E=%200.0.0',
+20 verbose parsed url   href: 'ejs@%3E=%200.0.0' }
+21 verbose already installed skipping passport@>= 0.0.0 /Users/rahulraghavan/Desktop/inknetwork
+22 verbose cache add name="ejs" spec=">= 0.0.0" args=["ejs",">= 0.0.0"]
+23 verbose parsed url { protocol: null,
+23 verbose parsed url   slashes: null,
+23 verbose parsed url   auth: null,
+23 verbose parsed url   host: null,
+23 verbose parsed url   port: null,
+23 verbose parsed url   hostname: null,
+23 verbose parsed url   hash: null,
+23 verbose parsed url   search: null,
+23 verbose parsed url   query: null,
+23 verbose parsed url   pathname: '%3E=%200.0.0',
+23 verbose parsed url   path: '%3E=%200.0.0',
+23 verbose parsed url   href: '%3E=%200.0.0' }
+24 verbose addNamed [ 'ejs', '>= 0.0.0' ]
+25 verbose addNamed [ null, '>=0.0.0' ]
+26 verbose already installed skipping passport-google-oauth@>= 0.0.0 /Users/rahulraghavan/Desktop/inknetwork
+27 silly lockFile 60ab998e-ejs-0-0-0 ejs@>= 0.0.0
+28 verbose lock ejs@>= 0.0.0 /Users/rahulraghavan/.npm/60ab998e-ejs-0-0-0.lock
+29 silly addNameRange { name: 'ejs', range: '>=0.0.0', hasData: false }
+30 verbose request where is /ejs
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id d4444a37d4115c0f
+33 verbose url raw /ejs
+34 verbose url resolving [ 'https://registry.npmjs.org/', './ejs' ]
+35 verbose url resolved https://registry.npmjs.org/ejs
+36 verbose request where is https://registry.npmjs.org/ejs
+37 info trying registry request attempt 1 at 01:34:59
+38 http GET https://registry.npmjs.org/ejs
+39 http 200 https://registry.npmjs.org/ejs
+40 silly registry.get cb [ 200,
+40 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 silly registry.get     etag: '"9SJ9T11FDS23XNAKVGFINI22T"',
+40 silly registry.get     'content-type': 'application/json',
+40 silly registry.get     'cache-control': 'max-age=60',
+40 silly registry.get     'content-length': '48530',
+40 silly registry.get     'accept-ranges': 'bytes',
+40 silly registry.get     date: 'Sun, 06 Sep 2015 20:05:01 GMT',
+40 silly registry.get     via: '1.1 varnish',
+40 silly registry.get     age: '0',
+40 silly registry.get     connection: 'keep-alive',
+40 silly registry.get     'x-served-by': 'cache-sin6920-SIN',
+40 silly registry.get     'x-cache': 'HIT',
+40 silly registry.get     'x-cache-hits': '1',
+40 silly registry.get     'x-timer': 'S1441569901.098339,VS0,VE817',
+40 silly registry.get     vary: 'Accept' } ]
+41 silly addNameRange number 2 { name: 'ejs', range: '>=0.0.0', hasData: true }
+42 silly addNameRange versions [ 'ejs',
+42 silly addNameRange   [ '0.0.1',
+42 silly addNameRange     '0.0.2',
+42 silly addNameRange     '0.0.3',
+42 silly addNameRange     '0.0.4',
+42 silly addNameRange     '0.1.0',
+42 silly addNameRange     '0.2.0',
+42 silly addNameRange     '0.2.1',
+42 silly addNameRange     '0.3.0',
+42 silly addNameRange     '0.3.1',
+42 silly addNameRange     '0.4.0',
+42 silly addNameRange     '0.4.1',
+42 silly addNameRange     '0.4.2',
+42 silly addNameRange     '0.4.3',
+42 silly addNameRange     '0.5.0',
+42 silly addNameRange     '0.6.0',
+42 silly addNameRange     '0.6.1',
+42 silly addNameRange     '0.7.0',
+42 silly addNameRange     '0.7.1',
+42 silly addNameRange     '0.7.2',
+42 silly addNameRange     '0.8.0',
+42 silly addNameRange     '0.8.1',
+42 silly addNameRange     '0.8.2',
+42 silly addNameRange     '0.8.3',
+42 silly addNameRange     '0.8.4',
+42 silly addNameRange     '0.8.5',
+42 silly addNameRange     '0.8.6',
+42 silly addNameRange     '0.8.8',
+42 silly addNameRange     '1.0.0',
+42 silly addNameRange     '2.0.2',
+42 silly addNameRange     '2.0.3',
+42 silly addNameRange     '2.0.4',
+42 silly addNameRange     '2.0.5',
+42 silly addNameRange     '2.0.6',
+42 silly addNameRange     '2.0.7',
+42 silly addNameRange     '2.0.8',
+42 silly addNameRange     '2.1.1',
+42 silly addNameRange     '2.1.2',
+42 silly addNameRange     '2.1.3',
+42 silly addNameRange     '2.1.4',
+42 silly addNameRange     '2.2.1',
+42 silly addNameRange     '2.2.2',
+42 silly addNameRange     '2.2.3',
+42 silly addNameRange     '2.2.4',
+42 silly addNameRange     '2.3.1',
+42 silly addNameRange     '2.3.2',
+42 silly addNameRange     '2.3.3' ] ]
+43 verbose addNamed [ 'ejs', '2.3.3' ]
+44 verbose addNamed [ '2.3.3', '2.3.3' ]
+45 silly lockFile 7b52e7cf-ejs-2-3-3 ejs@2.3.3
+46 verbose lock ejs@2.3.3 /Users/rahulraghavan/.npm/7b52e7cf-ejs-2-3-3.lock
+47 silly lockFile 54753e7c-stry-npmjs-org-ejs-ejs-2-3-3-tgz https://registry.npmjs.org/ejs/-/ejs-2.3.3.tgz
+48 verbose lock https://registry.npmjs.org/ejs/-/ejs-2.3.3.tgz /Users/rahulraghavan/.npm/54753e7c-stry-npmjs-org-ejs-ejs-2-3-3-tgz.lock
+49 verbose addRemoteTarball [ 'https://registry.npmjs.org/ejs/-/ejs-2.3.3.tgz',
+49 verbose addRemoteTarball   'a6babb67815d7190694af4ba82fe065e56d5f0e7' ]
+50 info retry fetch attempt 1 at 01:35:02
+51 verbose fetch to= /var/folders/gk/z773ctdj1ggbv7lyjl5s3xzw0000gn/T/npm-2730-hn9pCG-x/registry.npmjs.org/ejs/-/ejs-2.3.3.tgz
+52 http GET https://registry.npmjs.org/ejs/-/ejs-2.3.3.tgz
+53 http 200 https://registry.npmjs.org/ejs/-/ejs-2.3.3.tgz
+54 silly lockFile 54753e7c-stry-npmjs-org-ejs-ejs-2-3-3-tgz https://registry.npmjs.org/ejs/-/ejs-2.3.3.tgz
+55 silly lockFile 54753e7c-stry-npmjs-org-ejs-ejs-2-3-3-tgz https://registry.npmjs.org/ejs/-/ejs-2.3.3.tgz
+56 silly lockFile 7b52e7cf-ejs-2-3-3 ejs@2.3.3
+57 silly lockFile 7b52e7cf-ejs-2-3-3 ejs@2.3.3
+58 silly lockFile 60ab998e-ejs-0-0-0 ejs@>= 0.0.0
+59 silly lockFile 60ab998e-ejs-0-0-0 ejs@>= 0.0.0
+60 silly resolved [ { name: 'ejs',
+60 silly resolved     description: 'Embedded JavaScript templates',
+60 silly resolved     keywords: [ 'template', 'engine', 'ejs' ],
+60 silly resolved     version: '2.3.3',
+60 silly resolved     author:
+60 silly resolved      { name: 'Matthew Eernisse',
+60 silly resolved        email: 'mde@fleegix.org',
+60 silly resolved        url: 'http://fleegix.org' },
+60 silly resolved     contributors: [ [Object] ],
+60 silly resolved     license: 'Apache-2.0',
+60 silly resolved     main: './lib/ejs.js',
+60 silly resolved     repository: { type: 'git', url: 'git://github.com/mde/ejs.git' },
+60 silly resolved     bugs: { url: 'https://github.com/mde/ejs/issues' },
+60 silly resolved     homepage: 'https://github.com/mde/ejs',
+60 silly resolved     dependencies: {},
+60 silly resolved     devDependencies:
+60 silly resolved      { browserify: '^8.0.3',
+60 silly resolved        istanbul: '~0.3.5',
+60 silly resolved        jake: '^8.0.0',
+60 silly resolved        jsdoc: '^3.3.0-beta1',
+60 silly resolved        'lru-cache': '^2.5.0',
+60 silly resolved        mocha: '^2.1.0',
+60 silly resolved        rimraf: '^2.2.8',
+60 silly resolved        'uglify-js': '^2.4.16' },
+60 silly resolved     engines: { node: '>=0.10.0' },
+60 silly resolved     scripts:
+60 silly resolved      { test: 'mocha',
+60 silly resolved        coverage: 'istanbul cover node_modules/mocha/bin/_mocha',
+60 silly resolved        doc: 'rimraf out && jsdoc -c jsdoc.json lib/* docs/jsdoc/*',
+60 silly resolved        devdoc: 'rimraf out && jsdoc -p -c jsdoc.json lib/* docs/jsdoc/*' },
+60 silly resolved     _id: 'ejs@2.3.3',
+60 silly resolved     _shasum: 'a6babb67815d7190694af4ba82fe065e56d5f0e7',
+60 silly resolved     _resolved: 'https://registry.npmjs.org/ejs/-/ejs-2.3.3.tgz',
+60 silly resolved     _from: 'ejs@>= 0.0.0',
+60 silly resolved     _npmVersion: '2.1.11',
+60 silly resolved     _nodeVersion: '0.10.33',
+60 silly resolved     _npmUser: { name: 'mde', email: 'mde@fleegix.org' },
+60 silly resolved     maintainers: [ [Object], [Object] ],
+60 silly resolved     dist:
+60 silly resolved      { shasum: 'a6babb67815d7190694af4ba82fe065e56d5f0e7',
+60 silly resolved        tarball: 'http://registry.npmjs.org/ejs/-/ejs-2.3.3.tgz' },
+60 silly resolved     directories: {} } ]
+61 info install ejs@2.3.3 into /Users/rahulraghavan/Desktop/inknetwork
+62 info installOne ejs@2.3.3
+63 verbose node_modules/ejs unbuild
+64 verbose tar unpack /Users/rahulraghavan/.npm/ejs/2.3.3/package.tgz
+65 silly lockFile 2eb6a29c-ktop-inknetwork-node-modules-ejs tar:///Users/rahulraghavan/Desktop/inknetwork/node_modules/ejs
+66 verbose lock tar:///Users/rahulraghavan/Desktop/inknetwork/node_modules/ejs /Users/rahulraghavan/.npm/2eb6a29c-ktop-inknetwork-node-modules-ejs.lock
+67 silly lockFile 4b7e6654-ghavan-npm-ejs-2-3-3-package-tgz tar:///Users/rahulraghavan/.npm/ejs/2.3.3/package.tgz
+68 verbose lock tar:///Users/rahulraghavan/.npm/ejs/2.3.3/package.tgz /Users/rahulraghavan/.npm/4b7e6654-ghavan-npm-ejs-2-3-3-package-tgz.lock
+69 silly gunzTarPerm modes [ '755', '644' ]
+70 silly gunzTarPerm extractEntry
+71 silly gunzTarPerm extractEntry ejs.js
+72 silly gunzTarPerm extractEntry ejs.min.js
+73 silly gunzTarPerm extractEntry Jakefile
+74 silly gunzTarPerm extractEntry lib/
+75 silly gunzTarPerm extractEntry package.json
+76 silly gunzTarPerm extractEntry README.md
+77 silly gunzTarPerm extractEntry test/
+78 silly gunzTarPerm extractEntry test/ejs.js
+79 silly gunzTarPerm extractEntry test/fixtures/
+80 silly gunzTarPerm extractEntry test/mocha.opts
+81 silly gunzTarPerm extractEntry test/tmp/
+82 silly gunzTarPerm extractEntry test/tmp/include.ejs
+83 silly gunzTarPerm extractEntry test/tmp/include_preprocessor.ejs
+84 silly gunzTarPerm extractEntry test/tmp/renderFile.ejs
+85 silly gunzTarPerm extractEntry test/fixtures/backslash.ejs
+86 silly gunzTarPerm extractEntry test/fixtures/backslash.html
+87 silly gunzTarPerm extractEntry test/fixtures/comments.ejs
+88 silly gunzTarPerm extractEntry test/fixtures/comments.html
+89 silly gunzTarPerm extractEntry test/fixtures/consecutive-tags.ejs
+90 silly gunzTarPerm extractEntry test/fixtures/consecutive-tags.html
+91 silly gunzTarPerm extractEntry test/fixtures/double-quote.ejs
+92 silly gunzTarPerm extractEntry test/fixtures/double-quote.html
+93 silly gunzTarPerm extractEntry test/fixtures/error.ejs
+94 silly gunzTarPerm extractEntry test/fixtures/error.out
+95 silly gunzTarPerm extractEntry test/fixtures/fail.ejs
+96 silly gunzTarPerm extractEntry test/fixtures/hello-world.ejs
+97 silly gunzTarPerm extractEntry test/fixtures/include-abspath.ejs
+98 silly gunzTarPerm extractEntry test/fixtures/include-simple.ejs
+99 silly gunzTarPerm extractEntry test/fixtures/include-simple.html
+100 silly gunzTarPerm extractEntry test/fixtures/include.css.ejs
+101 silly gunzTarPerm extractEntry test/fixtures/include.css.html
+102 silly gunzTarPerm extractEntry test/fixtures/include.ejs
+103 silly gunzTarPerm extractEntry test/fixtures/include.html
+104 silly gunzTarPerm extractEntry test/fixtures/include_cache.ejs
+105 silly gunzTarPerm extractEntry test/fixtures/include_cache.html
+106 silly gunzTarPerm extractEntry test/fixtures/include_preprocessor.css.ejs
+107 silly gunzTarPerm extractEntry test/fixtures/include_preprocessor.css.html
+108 silly gunzTarPerm extractEntry test/fixtures/include_preprocessor.ejs
+109 silly gunzTarPerm extractEntry test/fixtures/include_preprocessor.html
+110 silly gunzTarPerm extractEntry test/fixtures/include_preprocessor_cache.ejs
+111 silly gunzTarPerm extractEntry test/fixtures/include_preprocessor_cache.html
+112 silly gunzTarPerm extractEntry test/fixtures/includes/
+113 silly gunzTarPerm extractEntry test/fixtures/literal.ejs
+114 silly gunzTarPerm extractEntry test/fixtures/literal.html
+115 silly gunzTarPerm extractEntry test/fixtures/menu.ejs
+116 silly gunzTarPerm extractEntry test/fixtures/menu.html
+117 silly gunzTarPerm extractEntry test/fixtures/menu_preprocessor.ejs
+118 silly gunzTarPerm extractEntry test/fixtures/menu_preprocessor.html
+119 silly gunzTarPerm extractEntry test/fixtures/menu_var.ejs
+120 silly gunzTarPerm extractEntry test/fixtures/messed.ejs
+121 silly gunzTarPerm extractEntry test/fixtures/messed.html
+122 silly gunzTarPerm extractEntry test/fixtures/newlines.ejs
+123 silly gunzTarPerm extractEntry test/fixtures/newlines.html
+124 silly gunzTarPerm extractEntry test/fixtures/newlines.mixed.ejs
+125 silly gunzTarPerm extractEntry test/fixtures/newlines.mixed.html
+126 silly gunzTarPerm extractEntry test/fixtures/no.newlines.ejs
+127 silly gunzTarPerm extractEntry test/fixtures/no.newlines.error.ejs
+128 silly gunzTarPerm extractEntry test/fixtures/no.newlines.html
+129 silly gunzTarPerm extractEntry test/fixtures/no.semicolons.ejs
+130 silly gunzTarPerm extractEntry test/fixtures/no.semicolons.html
+131 silly gunzTarPerm extractEntry test/fixtures/para.ejs
+132 silly gunzTarPerm extractEntry test/fixtures/pet.ejs
+133 silly gunzTarPerm extractEntry test/fixtures/rmWhitespace.ejs
+134 silly gunzTarPerm extractEntry test/fixtures/rmWhitespace.html
+135 silly gunzTarPerm extractEntry test/fixtures/single-quote.ejs
+136 silly gunzTarPerm extractEntry test/fixtures/single-quote.html
+137 silly gunzTarPerm extractEntry test/fixtures/style.css
+138 silly gunzTarPerm extractEntry test/fixtures/user-no-with.ejs
+139 silly gunzTarPerm extractEntry test/fixtures/user.ejs
+140 silly gunzTarPerm extractEntry test/fixtures/with-context.ejs
+141 silly gunzTarPerm extractEntry test/fixtures/includes/bom.ejs
+142 silly gunzTarPerm extractEntry test/fixtures/includes/menu/
+143 silly gunzTarPerm extractEntry test/fixtures/includes/menu-item.ejs
+144 silly gunzTarPerm extractEntry test/fixtures/includes/menu/item.ejs
+145 silly gunzTarPerm extractEntry lib/ejs.js
+146 silly gunzTarPerm extractEntry lib/utils.js
+147 silly lockFile 2eb6a29c-ktop-inknetwork-node-modules-ejs tar:///Users/rahulraghavan/Desktop/inknetwork/node_modules/ejs
+148 silly lockFile 2eb6a29c-ktop-inknetwork-node-modules-ejs tar:///Users/rahulraghavan/Desktop/inknetwork/node_modules/ejs
+149 silly lockFile 4b7e6654-ghavan-npm-ejs-2-3-3-package-tgz tar:///Users/rahulraghavan/.npm/ejs/2.3.3/package.tgz
+150 silly lockFile 4b7e6654-ghavan-npm-ejs-2-3-3-package-tgz tar:///Users/rahulraghavan/.npm/ejs/2.3.3/package.tgz
+151 info preinstall ejs@2.3.3
+152 verbose readDependencies using package.json deps
+153 verbose readDependencies using package.json deps
+154 silly resolved []
+155 verbose about to build /Users/rahulraghavan/Desktop/inknetwork/node_modules/ejs
+156 info build /Users/rahulraghavan/Desktop/inknetwork/node_modules/ejs
+157 verbose linkStuff [ false,
+157 verbose linkStuff   false,
+157 verbose linkStuff   false,
+157 verbose linkStuff   '/Users/rahulraghavan/Desktop/inknetwork/node_modules' ]
+158 info linkStuff ejs@2.3.3
+159 verbose linkBins ejs@2.3.3
+160 verbose linkMans ejs@2.3.3
+161 verbose rebuildBundles ejs@2.3.3
+162 info install ejs@2.3.3
+163 info postinstall ejs@2.3.3
+164 info build /Users/rahulraghavan/Desktop/inknetwork
+165 verbose linkStuff [ false, false, false, '/Users/rahulraghavan/Desktop' ]
+166 info linkStuff inknetwork@1.0.0
+167 verbose linkBins inknetwork@1.0.0
+168 verbose linkMans inknetwork@1.0.0
+169 verbose rebuildBundles inknetwork@1.0.0
+170 verbose rebuildBundles [ '.bin',
+170 verbose rebuildBundles   'backbone',
+170 verbose rebuildBundles   'body-parser',
+170 verbose rebuildBundles   'connect-busboy',
+170 verbose rebuildBundles   'ejs',
+170 verbose rebuildBundles   'elasticsearch',
+170 verbose rebuildBundles   'express',
+170 verbose rebuildBundles   'express3-handlebars',
+170 verbose rebuildBundles   'fs-extra',
+170 verbose rebuildBundles   'handlebars',
+170 verbose rebuildBundles   'jade',
+170 verbose rebuildBundles   'jquery',
+170 verbose rebuildBundles   'multer',
+170 verbose rebuildBundles   'passport',
+170 verbose rebuildBundles   'passport-google',
+170 verbose rebuildBundles   'passport-google-oauth',
+170 verbose rebuildBundles   'path',
+170 verbose rebuildBundles   'underscore' ]
+171 verbose rebuild bundle /Users/rahulraghavan/Desktop/inknetwork/node_modules/connect-busboy
+172 info build /Users/rahulraghavan/Desktop/inknetwork/node_modules/connect-busboy
+173 info preinstall connect-busboy@0.0.2
+174 verbose linkStuff [ false,
+174 verbose linkStuff   false,
+174 verbose linkStuff   false,
+174 verbose linkStuff   '/Users/rahulraghavan/Desktop/inknetwork/node_modules' ]
+175 info linkStuff connect-busboy@0.0.2
+176 verbose linkBins connect-busboy@0.0.2
+177 verbose linkMans connect-busboy@0.0.2
+178 verbose rebuildBundles connect-busboy@0.0.2
+179 verbose rebuildBundles [ 'busboy' ]
+180 info install connect-busboy@0.0.2
+181 info postinstall connect-busboy@0.0.2
+182 verbose rebuild bundle /Users/rahulraghavan/Desktop/inknetwork/node_modules/elasticsearch
+183 info build /Users/rahulraghavan/Desktop/inknetwork/node_modules/elasticsearch
+184 info preinstall elasticsearch@6.0.0
+185 verbose linkStuff [ false,
+185 verbose linkStuff   false,
+185 verbose linkStuff   false,
+185 verbose linkStuff   '/Users/rahulraghavan/Desktop/inknetwork/node_modules' ]
+186 info linkStuff elasticsearch@6.0.0
+187 verbose linkBins elasticsearch@6.0.0
+188 verbose linkMans elasticsearch@6.0.0
+189 verbose rebuildBundles elasticsearch@6.0.0
+190 verbose rebuildBundles [ 'bluebird', 'chalk', 'forever-agent', 'lodash', 'lodash-compat' ]
+191 info install elasticsearch@6.0.0
+192 info postinstall elasticsearch@6.0.0
+193 verbose rebuild bundle /Users/rahulraghavan/Desktop/inknetwork/node_modules/fs-extra
+194 info build /Users/rahulraghavan/Desktop/inknetwork/node_modules/fs-extra
+195 info preinstall fs-extra@0.23.1
+196 verbose linkStuff [ false,
+196 verbose linkStuff   false,
+196 verbose linkStuff   false,
+196 verbose linkStuff   '/Users/rahulraghavan/Desktop/inknetwork/node_modules' ]
+197 info linkStuff fs-extra@0.23.1
+198 verbose linkBins fs-extra@0.23.1
+199 verbose linkMans fs-extra@0.23.1
+200 verbose rebuildBundles fs-extra@0.23.1
+201 verbose rebuildBundles [ '.bin', 'graceful-fs', 'jsonfile', 'path-is-absolute', 'rimraf' ]
+202 info install fs-extra@0.23.1
+203 info postinstall fs-extra@0.23.1
+204 verbose rebuild bundle /Users/rahulraghavan/Desktop/inknetwork/node_modules/jade
+205 info build /Users/rahulraghavan/Desktop/inknetwork/node_modules/jade
+206 info preinstall jade@1.11.0
+207 verbose linkStuff [ false,
+207 verbose linkStuff   false,
+207 verbose linkStuff   false,
+207 verbose linkStuff   '/Users/rahulraghavan/Desktop/inknetwork/node_modules' ]
+208 info linkStuff jade@1.11.0
+209 verbose linkBins jade@1.11.0
+210 verbose link bins [ { jade: './bin/jade.js' },
+210 verbose link bins   '/Users/rahulraghavan/Desktop/inknetwork/node_modules/.bin',
+210 verbose link bins   false ]
+211 verbose linkMans jade@1.11.0
+212 verbose rebuildBundles jade@1.11.0
+213 verbose rebuildBundles [ '.bin',
+213 verbose rebuildBundles   'character-parser',
+213 verbose rebuildBundles   'clean-css',
+213 verbose rebuildBundles   'commander',
+213 verbose rebuildBundles   'constantinople',
+213 verbose rebuildBundles   'jstransformer',
+213 verbose rebuildBundles   'mkdirp',
+213 verbose rebuildBundles   'transformers',
+213 verbose rebuildBundles   'uglify-js',
+213 verbose rebuildBundles   'void-elements',
+213 verbose rebuildBundles   'with' ]
+214 error Error: EACCES, unlink '/Users/rahulraghavan/Desktop/inknetwork/node_modules/.bin/jade'
+214 error  { [Error: EACCES, unlink '/Users/rahulraghavan/Desktop/inknetwork/node_modules/.bin/jade']
+214 error   errno: 3,
+214 error   code: 'EACCES',
+214 error   path: '/Users/rahulraghavan/Desktop/inknetwork/node_modules/.bin/jade' }
+215 error Please try running this command again as root/Administrator.
+216 error System Darwin 14.3.0
+217 error command "node" "/usr/local/bin/npm" "install"
+218 error cwd /Users/rahulraghavan/Desktop/inknetwork
+219 error node -v v0.10.34
+220 error npm -v 1.4.28
+221 error path /Users/rahulraghavan/Desktop/inknetwork/node_modules/.bin/jade
+222 error code EACCES
+223 error errno 3
+224 error stack Error: EACCES, unlink '/Users/rahulraghavan/Desktop/inknetwork/node_modules/.bin/jade'
+225 verbose exit [ 3, true ]

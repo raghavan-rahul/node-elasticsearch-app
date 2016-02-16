@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Hello</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$(".hide").hide();
+    $(".tags").click(function(event){
+    	var dataId = $(event.currentTarget).data('id');
+        $(document.getElementById(dataId)).show()
+    });
+
+});
+</script>
+</head>
+<body>
+<ul>
+    {{#each task}}
+        <li>{{this.name}} priority {{this.priority}} 
+        <div class="hide" id = "{{taskId}}">
+        <form method="post" action="/add-tags">
+        <input type="text" id="tags" name="tags">
+        <input type="hidden" id="taskId" name="taskId" value="{{taskId}}">
+        </form>
+         </div><button class="tags" data-id = "{{taskId}}" > add tags</button></li>
+    {{/each}}
+</ul>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../favicon.ico">
+
+	<title>Ink Meetups</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".tag-form").hide();
+		$(".task-form").hide();
+    $(".add-tags").click(function(event){
+    	var dataId = $(event.currentTarget).data('id');
+        $(document.getElementById('tag-form-' + dataId)).show();
+        $(document.getElementById('tag-div-' + dataId)).hide();
+    });
+
+    $(".edit-task").click(function(event){
+    	var dataId = $(event.currentTarget).data('id');
+        $(document.getElementById('task-form-' + dataId)).show();
+        $(document.getElementById('task-div-' + dataId)).hide();
+    });
+});
+</script>
+	</script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Ink Meetup</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Dashboard</a></li>
+				<li><a href="#">Settings</a></li>
+				<li><a href="#">Profile</a></li>
+				<li><a href="#">Help</a></li>
+			</ul>
+			<form class="navbar-form navbar-right" method="post" action="/search">
+				<input class="form-control" id="task" name="task" type="text">
+			</form>
+		</div>
+	</div>
+</nav>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+			<h1 class="page-header"></h1>
+			<h2 class="sub-header">Tasks</h2>
+			<div class="table-responsive">
+				<table class="table table-striped">
+					<thead>
+					<tr>
+						<th>#</th>
+						<th>Task Name</th>
+						<th>Tags</th>
+						<th>Date</th>
+						<th>Add/Edit Tags</th>
+						<th>Edit</th>
+						<th>Delete</th>
+					</tr>
+					</thead>
+					<tbody>
+				
+					{{#each task}}
+						{{#if this.priority}}
+						<tr style="color:red">
+					{{else}}
+					  <tr>
+					 {{/if}}	
+						<td>{{this.count}}</td>
+				        <td>
+						<div class="task-form" id="task-form-{{this.taskId}}">
+				        <form method="post" action="edit-todo">
+						<div class="form-group">
+						<input class="form-control" id="task" name="task" type="text" value="{{this.name}}">
+						<input type="hidden" id="taskId" name="taskId" value="{{this.taskId}}">
+						</div>
+						</form>
+				        </div>
+						<div id="task-div-{{this.taskId}}">
+				        	{{this.name}}
+				        </div>
+				        </td>
+				        <td>
+				        <div class="tag-form" id="tag-form-{{this.taskId}}">
+				        <form method="post" action="add-tags">
+				        <input type="text" id="tags" name="tags" value="{{this.tags}}">
+				        <input type="hidden" id="taskId" name="taskId" value="{{this.taskId}}">
+				        </form>
+				        </div>
+				        <div id="tag-div-{{this.taskId}}">
+				        	{{this.tags}}
+				        </div>
+				        </td>
+				        <td>
+				        {{#if this.message}}
+							{{this.message}}	
+						{{else}}
+				        {{this.timestamp}}
+				         {{/if}}</td>
+				        <td><button type="button" class="btn btn-default add-tags" data-id="{{this.taskId}}">Add/Edit Tags</button></td>
+				        <td><button type="button" class="btn btn-default edit-task" data-id="{{this.taskId}}">Edit</button></td>
+				        <td>
+				        <form method="post" action="delete">
+				        <input type="submit" class="btn btn-danger" data-id="{{this.taskId}}" value="Delete">
+				        <input type="hidden" id="taskId" name="taskId" value="{{this.taskId}}"></form>
+				        </td>
+				         </tr>
+    				{{/each}}
+					</tbody>
+				</table>
+			</div>
+			<div class="add-form">
+				<form role="form" method="post" action="add-todo">
+					<div class="form-group">
+						<label for="inputdefault">Add task name</label>
+						<input class="form-control" id="task" name="task" type="text">
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+</html>
